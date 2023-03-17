@@ -6,6 +6,7 @@
     --fifth-color: #FFFFFF;
     --sixth-color: #F4F4FD;
     --seventh-color: #E7E9FC;
+    --border-color: #8E8F99;
 }
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -112,7 +113,6 @@ text-decoration: none;
 .section-blue {
     max-width: 1440px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7));
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroundimage.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -149,14 +149,14 @@ min-width: 264px;
 flex-basis: auto 264px;
 }
 .about-us-svgbox {
+    display: flex;
     width: 264px;
     height: 112px;
-    padding: 24px 100px;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 8px;
     background-color: var(--sixth-color);
-}
-.about-us-svg {
-   
+    border-radius: 4px;
 }
 .main-header {
     font-family: 'Roboto', sans-serif;
@@ -189,7 +189,7 @@ margin: 0 auto;
 }
 .order-btn:is(:hover, :focus) {
     background-color: var(--sixth-color);
-    color: var(--brand-color)
+    color: var(--brand-color);
 }
 .team-box {
     padding-top: 32px;
@@ -228,10 +228,7 @@ margin: 0 auto;
     fill: var(--sixth-color);
 }
 .soc-link:is(:hover, :focus) {
-background-color: var(--seventh-color);
-}
-.soc-link:is(:hover, :focus) .soc-icon {
-    fill: var(--brand-color);
+background-color: var(--fourth-color);
 }
 .about-us .desc-about-us {
     font-size: 16px;
@@ -316,13 +313,13 @@ padding-bottom: 120px;
     justify-content: center;
 }
 .customer-item {
-    width: 166px;
+    width: 168px;
     height: 88px;
 }
 .customer-link {
     width: 100%;
     height: 100%;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -333,7 +330,6 @@ padding-bottom: 120px;
 }
 .customer-link:hover {
     border: 1px solid var(--fourth-color);
-    border-radius: 4px;
 }
 .customer-link:hover .customer-svg {
     fill: var(--fourth-color);
@@ -353,7 +349,7 @@ color: var(--brand-color);
         text-decoration: none;
         text-transform: uppercase;
 }
-.social-media-header {
+.social-media-paragraph {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -400,6 +396,7 @@ padding-bottom: 120px;
 color: var(--fifth-color);
 background-color: var(--fourth-color) ;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-color: transparent;
 }
 .apps-header {
     font-weight: 500;
@@ -424,7 +421,10 @@ margin-right: 24px;
 .portfolio-card:not(:nth-child(n+7)) {
     margin-bottom: 48px ;
 }
-.portfolio-card:is(:hover, :focus) {
+.portfolio-link {
+display: block;
+}
+.portfolio-link:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-box {
@@ -450,9 +450,6 @@ margin-right: 24px;
 .footer-logo-box {
     margin-right: 120px;
 }
-.footer-soc-box {
-    text-align: center;
-}
 .second-soc-icon {
 fill: var(--sixth-color);
 }
@@ -466,10 +463,10 @@ fill: var(--sixth-color);
     justify-content: center;
 }
 .second-soc-link:is(:hover, :focus) {
-    background-color: var(--sixth-color);
+    background-color: #31D0AA;;
 }
 .second-soc-link:is(:hover, :focus) .second-soc-icon {
-    fill: rgba(0, 0, 0, 0.409);
+    fill: var(--sixth-color);
 }
 .second-soc-item {
     width: 40px;
