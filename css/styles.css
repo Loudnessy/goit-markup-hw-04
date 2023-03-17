@@ -463,7 +463,7 @@ fill: var(--sixth-color);
     justify-content: center;
 }
 .second-soc-link:is(:hover, :focus) {
-    background-color: #31D0AA;;
+    background-color: #31D0AA;
 }
 .second-soc-link:is(:hover, :focus) .second-soc-icon {
     fill: var(--sixth-color);
