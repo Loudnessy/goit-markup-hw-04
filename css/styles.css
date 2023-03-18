@@ -296,8 +296,6 @@ padding-bottom: 120px;
 .customer-section {
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
 }
 .customers-header {
         font-size: 36px;
@@ -475,3 +473,4 @@ fill: var(--sixth-color);
 .second-soc-item:not(:last-child) {
 margin-right: 16px;
 }
+
